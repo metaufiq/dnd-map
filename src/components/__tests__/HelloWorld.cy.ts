@@ -1,4 +1,4 @@
-import HelloWorld from '../HelloWorld.vue'
+import HelloWorld from '../../views/Login/components/TitleBase.vue'
 
 describe('HelloWorld', () => {
   it('playground', () => {
