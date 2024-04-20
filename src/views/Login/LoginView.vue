@@ -6,8 +6,8 @@ import TitleBase from './components/TitleBase.vue'
 <template>
   <TitleBase />
   <nav>
-    <RouterLink to="">New Game</RouterLink>
-    <RouterLink to="/about">About This Game</RouterLink>
+    <RouterLink to="">{{ $t('login.nav.game.new') }}</RouterLink>
+    <RouterLink to="/about">{{ $t('login.nav.game.about') }}</RouterLink>
   </nav>
   <LanguageOptions />
 </template>
