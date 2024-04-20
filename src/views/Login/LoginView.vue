@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import LanguageOptions from './components/LanguageOptions.vue'
 import TitleBase from './components/TitleBase.vue'
-import { PATH } from '@/router/constants'
+import { NAV_ITEMS } from './constants'
 </script>
 
 <template>
   <TitleBase />
   <nav>
-    <RouterLink :to="PATH.HOME">{{ $t('login.nav.game.new') }}</RouterLink>
-    <RouterLink :to="PATH.ABOUT">{{ $t('login.nav.game.about') }}</RouterLink>
+    <RouterLink v-for="nav in NAV_ITEMS" :to="nav.path" v-bind:key="nav.path">
+      {{ $t(nav.title) }}
+    </RouterLink>
   </nav>
   <LanguageOptions />
 </template>
