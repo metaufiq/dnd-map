@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SidebarBase from './components/SidebarBase.vue'
+import SidebarBase from './components/Sidebar/SidebarBase.vue'
 import ContentBase from './components/ContentBase.vue'
 </script>
 
