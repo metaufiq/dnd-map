@@ -1,9 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SidebarBase from './components/SidebarBase.vue'
+import ContentBase from './components/ContentBase.vue'
+</script>
 
 <template>
   <div class="container">
-    <nav class="sidebar"></nav>
-    <div class="content"></div>
+    <SidebarBase />
+    <ContentBase />
   </div>
 </template>
 
@@ -14,13 +17,5 @@
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-}
-.sidebar {
-  flex: 1;
-  background-color: red;
-}
-.content {
-  flex: 3;
-  background-color: blue;
 }
 </style>
