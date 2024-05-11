@@ -1,16 +1,23 @@
 <script setup lang="ts">
-const props = defineProps({
-  icon: String,
-  text: String
+const { iconSize } = defineProps({
+  text: String,
+  icon: Object,
+  iconSize: Number
 })
-const icon = props.icon
-const text = props.text
+
+console.log({ iconSize })
 </script>
 <template>
-  <div>
-    <div>{{ icon }}</div>
+  <div class="item-container">
+    <div><component :is="icon" :size="iconSize"></component></div>
     <div>{{ text }}</div>
   </div>
 </template>
 
-<style></style>
+<style>
+.item-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+</style>

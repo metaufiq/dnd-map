@@ -5,6 +5,6 @@
 <style scoped>
 .content {
   flex: 3;
-  background-color: blue;
+  background-color: rgb(233, 231, 231);
 }
 </style>
