@@ -2,10 +2,13 @@
 import IconDashboard from '@/components/icons/IconDashboard.vue'
 import SidebarItem from './SidebarItem.vue'
 </script>
-<template>
-  <nav class="sidebar">
-    <SidebarItem :icon="IconDashboard" text="testss" :icon-size="24" />
-  </nav>
+<template lang="pug">
+  nav(class="sidebar")
+    SidebarItem(
+      :icon="IconDashboard",
+      text="testtt",
+      :icon-size="24"
+    )
 </template>
 
 <style scoped>

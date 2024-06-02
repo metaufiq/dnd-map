@@ -1,17 +1,14 @@
 <script setup lang="ts">
-const { iconSize } = defineProps({
+defineProps({
   text: String,
   icon: Object,
   iconSize: Number
 })
-
-console.log({ iconSize })
 </script>
-<template>
-  <div class="item-container">
-    <div><component :is="icon" :size="iconSize"></component></div>
-    <div>{{ text }}</div>
-  </div>
+<template lang="pug">
+  div(class="item-container")
+    icon(:size="`${iconSize}`")
+    div {{ text }}
 </template>
 
 <style>
